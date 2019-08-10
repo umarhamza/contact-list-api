@@ -1,0 +1,158 @@
+
+.main {
+    height: 100vh;
+    min-height: 400px;
+
+    &--row {
+        height: 100%;
+        min-height: inherit;
+        
+        @include bp {
+            display: flex;
+        }
+    } // row-1
+} // main
+
+.column {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @include bp {
+        padding: 60px 4.5%;
+    } // bp
+    
+    @include bp(1300px) {
+        padding: 60px;
+    } // bp    
+
+    &-md-6 {
+        width: 100%;
+
+        @include bp {
+            width: 50%;
+        } // bp
+    } // column-md-6
+} // column
+
+.hero {
+    background: #333333 url("../images/hero-img.jpg") no-repeat center;
+    background-size: cover;
+    color: #ffffff;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+
+    @include bp {
+        margin-bottom: 0;
+    }
+
+    @include headings {
+        color: inherit;
+    } // headings
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0.6;
+        z-index: 2;
+    } // before 
+
+    &--inner {
+        position: relative;
+        z-index: 3;
+        height: 100%;
+    } // inner 
+
+    &--logo {
+        line-height: 1;
+        margin-bottom: 30px;
+
+        @include bp {
+            margin-bottom: 0;
+        }
+    } // logo
+
+    &--title {
+        line-height: 1.4;
+        margin-bottom: 40px;
+        
+        @include bp {
+            position: absolute;
+            top: 47%;
+            transform: translateY(-50%);
+            margin-bottom: 0;
+        } // bp
+    } // title
+
+    &--caption {
+        font-size: 18px;
+        margin-bottom: 0;
+        
+        @include bp {
+            font-size: 20px;
+            font-weight: 600;
+            position: absolute;
+            bottom: 0;
+        } // bp
+
+        @include bp(1600px) {
+            font-size: 28px;
+        } // bp
+        
+        &::before {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 2px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            
+            @include bp {
+                margin-bottom: 30px;
+            } // bp
+
+        } // before
+    } // caption
+} // hero
+
+.faq {
+    &--title {
+        line-height: 1.4;
+        margin-bottom: 25px;
+
+        @include bp {
+            margin-bottom: 45px;
+        } // bp
+    } // title
+
+    .accordion,
+    .scrollbar {
+        @include bp {
+            overflow-x: hidden;
+            margin-bottom: 0;
+        } // bp
+
+        &[data-simplebar] {
+            @include bp {
+                padding-right: 18px;
+                margin-right: -18px;
+
+            }            
+        }
+    } // accordion
+
+    .accordion {
+        max-height: 70vh;
+    }
+
+    .scrollbar {
+        max-height: 65vh;
+    }
+} // faq

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Contacts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+</head>
+<body>
+
+        <div class="main">
+            <div class="main--row">
+                <div class="hero column column-md-6">
+                    <div class="hero--inner">
+                        <h3 class="hero--logo">Contacts</h3>
+                        <h1 class="hero--title">Easy Search<br />Contact List</h1>
+                        <p class="hero--caption">
+                            "A real friend is one who walks in when the rest of the world walks out."
+                        </p>
+                    </div><!-- .hero--inner -->
+                </div><!-- .col -->
+                <div class="faq column column-md-6">
+                    <h2 class="faq--title">My Friends</h2>
+
+                    <input id="filter-input" type="text" placeholder="Search names...">
+                    <div class="scrollbar" data-simplebar data-simplebar-auto-hide="false">
+                        <ul id="names" class="list-of-names collection with-header">
+                            
+                        </ul><!-- .collection -->
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .main -->
+    
+   
+
+    <script src="dist/js/simplebar.min.js"></script>
+    <script src="dist/js/scripts.min.js"></script>
+</body>
+</html> 
