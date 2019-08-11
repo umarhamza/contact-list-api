@@ -22,7 +22,7 @@
 
     const LoadData = () => {
         const request = new XMLHttpRequest();
-        request.open('GET', 'https://uinames.com/api/?amount=25?region=united-kingdom', true);
+        request.open('GET', 'http://uinames.com/api/?amount=25?region=united-kingdom', true);
 
         request.onload = function () {
             if (this.status >= 200 && this.status < 400) {
@@ -42,7 +42,7 @@
     } // LoadData
 
     const StoreData = (loadedData) => {
-        // localStorage.setItem('names', JSON.stringify(loadedData));
+        localStorage.setItem('names', JSON.stringify(loadedData));
     } // StoreData
 
     const Input = () => {
@@ -88,13 +88,14 @@
                     </li>
                 `;
             } else {
-                // if (firstLetter !== undefined) {
+                console.log(firstLetter, firstLetter !== undefined, name);
+                if (firstLetter !== undefined) {
                     firstLetter = name[0];
                     items += `
                         <li class="collection-header"><h5>${firstLetter}</h5></li>
                         <li class="collection-item"><a href="#">${name}</a></li>
                     `;
-                // }
+                }
             }
 
             list.innerHTML = items;
