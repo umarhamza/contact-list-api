@@ -2,7 +2,7 @@
 
 - This repo is the code for the contact list api web app project I created.
 
-- This app loads names from the [UI Names API](https://uinames.com/){:target="_blank"} in an object.
+- This app loads names from the [UI Names API](https://uinames.com/) in an object.
 
 - This app uses `localStorage()` to store the api data as a string in web storage.
 
