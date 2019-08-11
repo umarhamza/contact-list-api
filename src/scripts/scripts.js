@@ -22,7 +22,7 @@
 
     const LoadData = () => {
         const request = new XMLHttpRequest();
-        request.open('GET', 'http://uinames.com/api/?amount=25?region=united-kingdom', true);
+        request.open('GET', 'https://uinames.com/api/?amount=25?region=united-kingdom', true);
 
         request.onload = function () {
             if (this.status >= 200 && this.status < 400) {
