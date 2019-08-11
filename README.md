@@ -1,4 +1,4 @@
-# My Contacts
+## My Contacts
 
 - This repo is the code for the contact list api web app project I created.
 
@@ -18,9 +18,12 @@
 
 - The design features a hero image, a heading and a quote.
 
-### Screenshot
-![My Contacts](screen-capture.gif)
+### Technology
+- I used scss and plain javascript.
+- I used [prepros](https://prepros.io/) to compile the code.
 
 ### Demo 
 [Click here to see the demo](https://ecstatic-nightingale-cc21a8.netlify.com/)
 
+### Screenshot
+![My Contacts](screen-capture.gif)
