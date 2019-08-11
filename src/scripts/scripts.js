@@ -87,7 +87,7 @@
                         <a href="#">${name}</a>
                     </li>
                 `;
-            } else {
+            } else if(firstLetter !== undefined) {
                 firstLetter = name[0];
                 items += `
                     <li class="collection-header"><h5>${firstLetter}</h5></li>
