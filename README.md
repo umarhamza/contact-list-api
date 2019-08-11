@@ -19,7 +19,7 @@
 - The design features a hero image, a heading and a quote.
 
 ### Screenshot
-![My Contacts](screenshot.jpg)
+![My Contacts](screencapture.gif)
 
 ### Demo 
 [Click here to see the demo](https://ecstatic-nightingale-cc21a8.netlify.com/)
