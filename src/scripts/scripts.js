@@ -42,7 +42,7 @@
     } // LoadData
 
     const StoreData = (loadedData) => {
-        localStorage.setItem('names', JSON.stringify(loadedData));
+        // localStorage.setItem('names', JSON.stringify(loadedData));
     } // StoreData
 
     const Input = () => {
@@ -87,12 +87,14 @@
                         <a href="#">${name}</a>
                     </li>
                 `;
-            } else if(firstLetter !== undefined) {
-                firstLetter = name[0];
-                items += `
-                    <li class="collection-header"><h5>${firstLetter}</h5></li>
-                    <li class="collection-item"><a href="#">${name}</a></li>
-                `;
+            } else {
+                // if (firstLetter !== undefined) {
+                    firstLetter = name[0];
+                    items += `
+                        <li class="collection-header"><h5>${firstLetter}</h5></li>
+                        <li class="collection-item"><a href="#">${name}</a></li>
+                    `;
+                // }
             }
 
             list.innerHTML = items;
