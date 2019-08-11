@@ -88,7 +88,6 @@
                     </li>
                 `;
             } else {
-                console.log(firstLetter, firstLetter !== undefined, name);
                 if (firstLetter !== undefined) {
                     firstLetter = name[0];
                     items += `
